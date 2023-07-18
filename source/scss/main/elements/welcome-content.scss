@@ -1,0 +1,33 @@
+.welcome-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &__title {
+    	margin-bottom: 30px;
+    	text-transform: uppercase;
+    	letter-spacing: 0.4em;
+    	line-height: 1.6;
+    	font-weight: 400;
+    	font-size: 18px;
+    	color: rgba(var(--color-01));
+
+    	@media screen and (max-width: 1960px) {
+    		margin-bottom: calc(20px + 10 * (100vw - 320px) / (1960 - 320));
+    		font-size: calc(14px + 4 * (100vw - 320px) / (1960 - 320));
+    	}
+    }
+
+    &__text {
+    	line-height: 1.6;
+    	font-family: 'Playfair Display';
+    	font-weight: 400;
+    	font-size: 42px;
+    	color: rgba(var(--color-04));
+
+    	@media screen and (max-width: 1960px) {
+    		font-size: calc(20px + 22 * (100vw - 320px) / (1960 - 320));
+    	}
+    }
+}

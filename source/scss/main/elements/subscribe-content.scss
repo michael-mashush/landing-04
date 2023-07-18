@@ -1,0 +1,36 @@
+.subscribe-content {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+    	margin-bottom: 25px;
+    	line-height: 1.4;
+    	font-family: 'Playfair Display';
+    	font-weight: 400;
+    	font-size: 46px;
+    	color: rgba(var(--color-04));
+
+    	@media screen and (max-width: 1610px) {
+    		margin-bottom: calc(15px + 10 * (100vw - 320px) / (1610 - 320));
+    		font-size: calc(25px + 21 * (100vw - 320px) / (1610 - 320));
+    	}
+
+    	& span {
+    		font-weight: 700;
+    		font-style: italic;
+    	}
+    }
+
+    &__text {
+    	line-height: 1.5;
+    	font-family: 'Jost';
+    	font-weight: 400;
+    	font-size: 21px;
+    	color: rgba(var(--color-05));
+
+    	@media screen and (max-width: 1610px) {
+    		max-width: 300px;
+    		font-size: calc(14px + 7 * (100vw - 320px) / (1610 - 320));
+    	}
+    }
+}

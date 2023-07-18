@@ -1,0 +1,24 @@
+.subscribe-form-input {
+    padding: 17px 30px;
+    min-width: 0;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    background: rgba(var(--color-15));
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(var(--color-04));
+
+    @media screen and (max-width: 1610px) {
+    	padding-top: calc(12px + 5 * (100vw - 320px) / (1610 - 320));
+    	padding-right: calc(20px + 20 * (100vw - 320px) / (1610 - 320));
+    	padding-bottom: calc(12px + 5 * (100vw - 320px) / (1610 - 320));
+    	padding-left: calc(20px + 20 * (100vw - 320px) / (1610 - 320));
+    }
+
+    &::placeholder {
+    	color: rgba(var(--color-07));
+    }
+}

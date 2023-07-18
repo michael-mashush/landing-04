@@ -1,0 +1,28 @@
+.navigation-link {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(var(--color-01));
+
+    @media screen and (max-width: 1024px) {
+    	font-size: calc(16px + 4 * (100vw - 320px) / (1024 - 320));
+    }
+
+    &::after {
+    	position: absolute;
+    	right: 100%;
+    	bottom: -0.1rem;
+    	left: 0;
+    	height: 1px;
+    	background-color: rgba(var(--color-01));
+    	transition: right 0.2s;
+    	content: '';
+    }
+
+    &:focus-visible::after, &:hover::after {
+    	right: 0;
+    }
+}

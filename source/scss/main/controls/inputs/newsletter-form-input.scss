@@ -1,0 +1,16 @@
+.newsletter-form-input {
+    padding: 10px 20px;
+    min-width: 0;
+    width: 100%;
+    border: 1px solid rgba(var(--color-12));
+    background-color: rgba(var(--color-13));
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(var(--color-04));
+
+    &::placeholder {
+    	color: rgba(var(--color-06));
+    }
+}

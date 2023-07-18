@@ -1,0 +1,23 @@
+.products-section {
+    &__title {
+    	margin-bottom: 60px;
+    	text-transform: uppercase;
+    	line-height: 1.5;
+    	font-weight: 400;
+    	font-size: 36px;
+    	color: rgba(var(--color-04));
+
+    	@media screen and (max-width: 1960px) {
+    		margin-bottom: calc(30px + 30 * (100vw - 320px) / (1960 - 320));
+    		font-size: calc(25px + 11 * (100vw - 320px) / (1960 - 320));
+    	}
+    }
+
+    &__slider {
+    	margin-bottom: 80px;
+
+    	@media screen and (max-width: 1960px) {
+    		margin-bottom: calc(30px + 50 * (100vw - 320px) / (1960 - 320));
+    	}
+    }
+}

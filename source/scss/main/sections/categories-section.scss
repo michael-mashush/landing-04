@@ -1,0 +1,9 @@
+.categories-section {
+    &__slider {
+    	margin-bottom: 60px;
+
+    	@media screen and (max-width: 1960px) {
+    		margin-bottom: calc(30px + 30 * (100vw - 320px) / (1960 - 320));
+    	}
+    }
+}

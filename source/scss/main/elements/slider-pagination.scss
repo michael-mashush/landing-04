@@ -1,0 +1,27 @@
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .swiper-pagination-bullet {
+    	height: 14px;
+    	width: 14px;
+    	border-radius: 50%;
+    	background-color: rgba(var(--color-09));
+    	transition: transform 0.2s, background-color 0.2s;
+    	transform: scale(0.75);
+
+    	&-active {
+    		background-color: rgba(var(--color-04));
+    		transform: scale(1);
+    	}
+
+    	&:not(:last-child) {
+    		margin-right: 20px;
+
+    		@media screen and (max-width: 1960px) {
+    			margin-right: calc(10px + 10 * (100vw - 320px) / (1960 - 320));
+    		}
+    	}
+    }
+}

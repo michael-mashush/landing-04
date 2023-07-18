@@ -1,0 +1,40 @@
+.features-grid {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 240px);
+    gap: 40px;
+
+    @media screen and (max-width: 1440px) {
+    	justify-content: center;
+    	column-gap: 40px;
+    	grid-template-columns: repeat(3, 240px);
+    	row-gap: calc(40px + 20 * (100vw - 1024px) / (1440 - 1024));
+    }
+
+    @media screen and (max-width: 1024px) {
+    	column-gap: 20px;
+    	grid-template-columns: repeat(3, 1fr);
+    	row-gap: calc(30px + 10 * (100vw - 768px) / (1024 - 768));
+    }
+
+    @media screen and (max-width: 768px) {
+    	column-gap: 40px;
+    	grid-template-columns: repeat(2, 240px);
+    	row-gap: calc(40px + 20 * (100vw - 600px) / (768 - 600));
+    }
+
+    @media screen and (max-width: 600px) {
+    	column-gap: 20px;
+    	grid-template-columns: repeat(2, 1fr);
+    	row-gap: calc(30px + 10 * (100vw - 480px) / (600 - 480));
+    }
+
+    @media screen and (max-width: 480px) {
+    	grid-template-columns: 290px;
+    	gap: calc(30px + 10 * (100vw - 320px) / (480 - 320));
+    }
+
+    @media screen and (max-width: 375px) {
+    	grid-template-columns: 1fr;
+    }
+}

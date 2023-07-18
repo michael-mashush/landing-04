@@ -1,0 +1,9 @@
+.default-section {
+    position: relative;
+    margin-bottom: 100px;
+    background-color: transparent;
+
+    @media screen and (max-width: 1960px) {
+    	margin-bottom: calc(80px + 20 * (100vw - 320px) / (1960 - 320));
+    }
+}

@@ -1,0 +1,16 @@
+.social-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+
+    &__icon path {
+    	transition: fill 0.2s;
+    	fill: rgba(var(--color-08));
+
+    	.social-media-link:focus-visible &, .social-media-link:hover & {
+    		fill: rgba(var(--color-04));
+    	}
+    }
+}

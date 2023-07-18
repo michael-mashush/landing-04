@@ -1,0 +1,42 @@
+.header-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 10px;
+    background-color: rgba(var(--color-15));
+
+    @media screen and (max-width: 1024px) {
+    	padding-top: 0;
+    }
+
+    &__inner {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	height: var(--header-source-height);
+    	border-bottom: 1px solid rgba(var(--color-01), 0.2);
+
+    	@media screen and (max-width: 1024px) {
+    		height: var(--header-mobile-height);
+    	}
+    }
+
+    &__logotype {
+    	margin-right: 20px;
+    }
+
+    &__content {
+    	display: flex;
+    	align-items: center;
+    }
+
+    &__burger-wrapper {
+    	display: none;
+
+    	@media screen and (max-width: 1024px) {
+    		display: block;
+    	}
+    }
+}

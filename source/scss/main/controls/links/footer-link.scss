@@ -1,0 +1,16 @@
+.footer-link {
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 17px;
+    color: rgba(var(--color-05));
+    transition: color 0.2s;
+
+    @media screen and (max-width: 1610px) {
+    	font-size: calc(16px + 1 * (100vw - 320px) / (1610 - 320));
+    }
+
+    &:focus-visible, &:hover {
+    	color: rgba(var(--color-04));
+    }
+}

@@ -1,0 +1,11 @@
+.welcome-section {
+    &__inner {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    }
+
+    &__content {
+    	max-width: 1220px;
+    }
+}

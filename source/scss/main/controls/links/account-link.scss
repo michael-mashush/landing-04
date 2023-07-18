@@ -1,0 +1,30 @@
+.account-link {
+    &__icon {
+    	height: 18px;
+    	width: 18px;
+
+    	@media screen and (max-width: 1440px) {
+    		height: 16px;
+    		width: 16px;
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		height: 20px;
+    		width: 20px;
+    	}
+
+    	@media screen and (max-width: 425px) {
+    		height: 18px;
+    		width: 18px;
+    	}
+
+    	path {
+    		transition: stroke 0.2s;
+    		stroke: rgba(var(--color-08));
+
+    		.account-link:focus-visible &, .account-link:hover & {
+    			stroke: rgba(var(--color-04));
+    		}
+    	}
+    }
+}

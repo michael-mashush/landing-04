@@ -1,0 +1,15 @@
+.call-to-buy-image {
+    padding-top: 86%;
+
+    @media screen and (max-width: 1680px) {
+    	padding-top: 90%;
+    }
+
+    @media screen and (max-width: 1440px) {
+    	padding-top: 100%;
+    }
+
+    @media screen and (max-width: 1200px) {
+    	padding-top: 110%;
+    }
+}

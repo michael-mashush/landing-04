@@ -1,0 +1,30 @@
+.logotype-link {
+    line-height: 1.2;
+    font-family: 'Imbue';
+    font-weight: 700;
+    color: rgba(var(--color-01));
+
+    &--default {
+    	font-size: 34px;
+
+    	@media screen and (max-width: 1610px) {
+    		font-size: calc(30px + 4 * (100vw - 1024px) / (1610 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		font-size: 30px;
+    	}
+    }
+
+    &--greater {
+    	font-size: 128px;
+
+    	@media screen and (max-width: 1610px) {
+    		font-size: calc(80px + 48 * (100vw - 320px) / (1610 - 320));
+    	}
+
+    	@media screen and (max-width: 320px) {
+    		font-size: 80px;
+    	}
+    }
+}

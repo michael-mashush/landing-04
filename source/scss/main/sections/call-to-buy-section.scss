@@ -1,0 +1,44 @@
+.call-to-buy-section {
+    &__inner {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	padding: 0 20px;
+
+    	@media screen and (max-width: 1960px) {
+    		padding-right: calc(0px + 20 * (100vw - 1024px) / (1960 - 1024));
+    		padding-left: calc(0px + 20 * (100vw - 1024px) / (1960 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		justify-content: center;
+    		padding: 0;
+    	}
+    }
+
+    &__image-wrapper {
+    	flex: 0 0 980px;
+
+    	@media screen and (max-width: 1960px) {
+    		flex-shrink: 1;
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		display: none;
+    	}
+    }
+
+    &__content {
+    	flex: 0 0 750px;
+    	margin-left: 40px;
+
+    	@media screen and (max-width: 1960px) {
+    		flex-basis: calc(500px + 250 * (100vw - 1024px) / (1960 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		flex: 0 1 750px;
+    		margin-left: 0;
+    	}
+    }
+}

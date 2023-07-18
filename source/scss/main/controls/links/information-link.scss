@@ -1,0 +1,17 @@
+.information-link {
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgba(var(--color-05));
+    transition: color 0.2s;
+
+    @media screen and (max-width: 1610px) {
+    	font-size: calc(16px + 1 * (100vw - 320px) / (1610 - 320));
+    }
+
+    &:focus-visible, &:hover {
+    	color: rgba(var(--color-04));
+    }
+}

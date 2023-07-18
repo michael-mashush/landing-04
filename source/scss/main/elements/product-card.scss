@@ -1,0 +1,83 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+    	margin-bottom: 25px;
+    	padding-top: 150%;
+
+    	@media screen and (max-width: 1960px) {
+    		margin-bottom: calc(15px + 10 * (100vw - 1024px) / (1960 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		margin-bottom: calc(15px + 10 * (100vw - 600px) / (1024 - 600));
+    	}
+
+    	@media screen and (max-width: 600px) {
+    		margin-bottom: calc(15px + 10 * (100vw - 320px) / (1024 - 320));
+    	}
+    }
+
+    &__inner {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: flex-end;
+
+    	@media screen and (max-width: 600px) {
+    		align-items: flex-start;
+    		flex-direction: column;
+    	}
+    }
+
+    &__title {
+    	margin-right: 10px;
+    	text-transform: capitalize;
+    	line-height: 1.0;
+    	font-family: 'Playfair Display';
+    	font-weight: 400;
+    	font-size: 21px;
+    	color: rgba(var(--color-04));
+
+    	@media screen and (max-width: 1960px) {
+    		font-size: calc(14px + 7 * (100vw - 1024px) / (1960 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		font-size: calc(14px + 7 * (100vw - 600px) / (1024 - 600));
+    	}
+
+    	@media screen and (max-width: 600px) {
+    		margin-right: 0;
+    		margin-bottom: calc(10px + 5 * (100vw - 320px) / (600 - 320));
+    		font-size: calc(14px + 7 * (100vw - 320px) / (600 - 320));
+    	}
+    }
+
+    &__price {
+    	display: flex;
+    	align-items: center;
+    	text-transform: capitalize;
+    	letter-spacing: 0.02em;
+    	line-height: 1.0;
+    	font-weight: 400;
+    	font-size: 21px;
+    	color: rgba(var(--color-05));
+
+    	@media screen and (max-width: 1960px) {
+    		font-size: calc(14px + 7 * (100vw - 1024px) / (1960 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		font-size: calc(14px + 7 * (100vw - 600px) / (1024 - 600));
+    	}
+
+    	@media screen and (max-width: 600px) {
+    		font-size: calc(14px + 7 * (100vw - 320px) / (600 - 320));
+    	}
+
+    	&::before {
+    		content: '$';
+    	}
+    }
+}

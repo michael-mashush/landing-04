@@ -1,0 +1,45 @@
+.account-panel {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+    	justify-content: space-between;
+    }
+
+    @media screen and (max-width: 375px) {
+    	flex-direction: column;
+    }
+
+    &__list {
+    	display: flex;
+    	align-items: center;
+    	margin-left: 70px;
+
+    	@media screen and (max-width: 1960px) {
+    		margin-left: calc(40px + 30 * (100vw - 1024px) / (1960 - 1024));
+    	}
+
+    	@media screen and (max-width: 1024px) {
+    		margin-left: 20px;
+    	}
+
+    	@media screen and (max-width: 375px) {
+    		margin-top: 20px;
+    		margin-left: 0;
+    	}
+    }
+
+    &__item {
+    	&:not(:last-child) {
+    		margin-right: 60px;
+
+    		@media screen and (max-width: 1960px) {
+    			margin-right: calc(30px + 30 * (100vw - 1024px) / (1960 - 1024));
+    		}
+
+    		@media screen and (max-width: 1024px) {
+    			margin-right: calc(30px + 10 * (100vw - 320px) / (1024 - 320));
+    		}
+    	}
+    }
+}
